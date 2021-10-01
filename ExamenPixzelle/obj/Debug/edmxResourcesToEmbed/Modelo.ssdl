@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="examenPixzelleModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="examenPixzelleModelStoreContainer">
+    <EntitySet Name="Usuarios" EntityType="examenPixzelleModel.Store.Usuarios" store:Type="Tables" store:Schema="dbo" store:Name="Usuarios">
+      <DefiningQuery>SELECT 
+      [Usuarios].[id] AS [id], 
+      [Usuarios].[usuario] AS [usuario], 
+      [Usuarios].[contrasenia] AS [contrasenia]
+      FROM [dbo].[Usuarios] AS [Usuarios]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Videojuegos" EntityType="examenPixzelleModel.Store.Videojuegos" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'examenPixzelle.dbo.Usuarios' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="usuario" Type="varchar" MaxLength="50" />
+    <Property Name="contrasenia" Type="varbinary" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Videojuegos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="fechaLanzamiento" Type="varchar" MaxLength="50" />
+    <Property Name="Portada" Type="varchar" MaxLength="50" />
+    <Property Name="Compañia" Type="varchar" MaxLength="50" />
+    <Property Name="ConsolaJuego" Type="varchar" MaxLength="50" />
+  </EntityType>
+</Schema>

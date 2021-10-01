@@ -1,0 +1,7 @@
+c:\users\crist\documents\visual studio 2012\Projects\ExamenPixzelle\ExamenPixzelle\bin\ExamenPixzelle.dll
+c:\users\crist\documents\visual studio 2012\Projects\ExamenPixzelle\ExamenPixzelle\bin\ExamenPixzelle.pdb
+c:\users\crist\documents\visual studio 2012\Projects\ExamenPixzelle\ExamenPixzelle\obj\Debug\ExamenPixzelle.csprojResolveAssemblyReference.cache
+c:\users\crist\documents\visual studio 2012\Projects\ExamenPixzelle\ExamenPixzelle\obj\Debug\ExamenPixzelle.dll
+c:\users\crist\documents\visual studio 2012\Projects\ExamenPixzelle\ExamenPixzelle\obj\Debug\ExamenPixzelle.pdb
+c:\users\crist\documents\visual studio 2012\Projects\ExamenPixzelle\ExamenPixzelle\bin\EntityFramework.dll
+c:\users\crist\documents\visual studio 2012\Projects\ExamenPixzelle\ExamenPixzelle\bin\EntityFramework.xml
